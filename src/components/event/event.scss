@@ -1,0 +1,53 @@
+.event {
+  position: absolute;
+  width: 100%;
+  background-color: rgb(123, 148, 201);
+  z-index: 1;
+  border-radius: 8px;
+  padding: 8px;
+  color: #fff;
+  box-shadow: 5px 5px 5px 0px rgba(34, 60, 80, 0.6);
+
+  &__title {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 8px;
+  }
+
+  &__description {
+    width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-top: 8px;
+  }
+
+  &:hover {
+    font-weight: bold;
+    background-color: red;
+  }
+}
+
+.delete-event-btn {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  right: 0;
+  width: 50%;
+  height: 40px;
+  top: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(123, 148, 201);
+  color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302);
+  z-index: 1;
+
+  &:hover {
+    background-color: red;
+  }
+}
